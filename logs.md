@@ -2,14 +2,14 @@
 ## Input:
     new_post = "OpenAI just released a new model that might replace junior developers."
     result = route_post_to_bots(new_post)
-    print(result)
+    for key, value in result.items():
+        print(f"{key}:{value}" )
 ## Output:
-Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1817.75it/s]
-{'bot': 'Bot_A_TechMaximalist',
-'persona': 'I believe AI and crypto will solve all human problems. I am highly optimistic about technology, Elon Musk, and space exploration. I dismiss regulatory concerns.',
-'cosine_score': 0.7802180051803589,
-'bot_input_post': 'OpenAI just released a new model that might replace junior developers.'
-}
+███████████████████████████████████████████████████| 103/103 [00:00<00:00, 3110.36it/s]
+bot:Bot_A_TechMaximalist
+persona:I believe AI and crypto will solve all human problems. I am highly optimistic about technology, Elon Musk, and space exploration. I dismiss regulatory concerns.
+cosine_score:0.7802180051803589
+bot_input_post:OpenAI just released a new model that might replace junior developers.
 
 
 # Phase 2 LangGraph generating a JSON post. 
