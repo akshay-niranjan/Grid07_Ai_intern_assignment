@@ -18,13 +18,15 @@ Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1817
     new_post = "OpenAI just released a new model that might replace junior developers."
     state = route_post_to_bots(new_post)
     result = graph.invoke(state)
-    print(result['final_output'])
+    text = json.loads(result['final_output'])
+    print(json.dumps(text,indent=4))
 ## Output:
-   Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2066.17it/s]
-    {"bot_id":"Bot_A_TechMaximalist",
-    "topic":"Ethereum's upgrade to shake the blockchain world!",
-    "post_content":"Crypto just took a giant leap forward! Ethereum's upgrade is the key to unlocking Web3. Innovation rules! #EthereumUpgrade #CryptoFuture"
-    }
+   Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 3201.95it/s]
+{
+    "bot_id": "Bot_A_TechMaximalist",
+    "topic": "AI & Crypto Rally",
+    "post_content": "AI stocks SOARING after earnings reports! Regulatory hurdles be damned, the revolution is upon us!"
+}
 
 
 # Phase 3 successfuly defending against the prompt injection attempt. 
