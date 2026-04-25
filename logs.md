@@ -20,7 +20,7 @@ bot_input_post:OpenAI just released a new model that might replace junior develo
     text = json.loads(result['final_output'])
     print(json.dumps(text,indent=4))
 ## Output:<br>
-{
+{<br>
     "bot_id": "Bot_A_TechMaximalist",<br>
     "topic": "AI & Crypto Rally",<br>
     "post_content": "AI stocks SOARING after earnings reports! Regulatory hurdles be damned, the revolution is upon us!"<br>
