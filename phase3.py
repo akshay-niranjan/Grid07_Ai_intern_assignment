@@ -104,4 +104,5 @@ response = generate_defense_reply(
             human_reply=human_reply,
             llm=llm
         )
-print(response)
+for item in response:
+    print(item)
