@@ -69,13 +69,11 @@ def decide_search(state: GraphState):
     prompt = prompt_template.invoke({"persona":state['persona']})
 
     response = llm.invoke(prompt)
-    print("Decide Search: ",response.content,"\n")
     return {"query":response.content}            # llm will return query based on persona -> web_search
 
 # Node 2: Web Search
 def web_search(state: GraphState):
     result = mock_searxng_search.invoke(state["query"])    # return any one hardcoded news from my custom news document
-    print(result)
     return {"web_search_result": result}
 
 # Node 3: Draft Post using llm  
@@ -139,4 +137,3 @@ if __name__ == "__main__":
     result = graph.invoke(state)
 
     print(result['final_output'])
-    print(type(result['final_output']))
