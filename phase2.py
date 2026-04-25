@@ -136,4 +136,5 @@ if __name__ == "__main__":
     state = route_post_to_bots(new_post)
     result = graph.invoke(state)
 
-    print(result['final_output'])
+    text = json.loads(result['final_output'])
+    print(json.dumps(text,indent=4))
