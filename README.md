@@ -1,4 +1,10 @@
-# Grid07_AI_Intern_Assignment
+# AI Engineering Assignment: Cognitive Routing & RAG 
+Objective:Build the core AI cognitive loop for the Grid07 platform. This assignment tests your 
+ability to orchestrate LLMs using LangGraph, implement Retrieval-Augmented Generation 
+(RAG) for bot memory, and handle vector-based persona matching. 
+Tech Stack:Python, LangChain/LangGraph, Vector Database (ChromaDB, FAISS, or local 
+pgvector), LLM (Olama local Llama-3, Groq, or OpenAI free tier). 
+
 ## LangGraph Node Structure
 Simple graph structure is used: 
 1.Decide_search Node: use state as input which stores persona, topic and conversation context and decide search query using llm
