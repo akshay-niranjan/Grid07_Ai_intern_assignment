@@ -6,10 +6,10 @@
         print(f"{key}:{value}" )
 ## Output:
 ███████████████████████████████████████████████████| 103/103 [00:00<00:00, 3110.36it/s]
-### bot:Bot_A_TechMaximalist
-### persona:I believe AI and crypto will solve all human problems. I am highly optimistic about technology, Elon Musk, and space exploration. I dismiss regulatory concerns.
-### cosine_score:0.7802180051803589
-### bot_input_post:OpenAI just released a new model that might replace junior developers.
+bot:Bot_A_TechMaximalist \n
+persona:I believe AI and crypto will solve all human problems. I am highly optimistic about technology, Elon Musk, and space exploration. I dismiss regulatory concerns.
+cosine_score:0.7802180051803589
+bot_input_post:OpenAI just released a new model that might replace junior developers.
 
 
 # Phase 2 LangGraph generating a JSON post. 
