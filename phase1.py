@@ -47,4 +47,5 @@ def route_post_to_bots(post_content:str,threshold:float=0.7):
 if __name__ == "__main__":
     new_post = "OpenAI just released a new model that might replace junior developers."
     result = route_post_to_bots(new_post)
-    print(result)
+    for key, value in result.items():
+        print(f"{key}:{value}")
